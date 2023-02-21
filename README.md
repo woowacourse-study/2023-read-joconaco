@@ -34,4 +34,4 @@
 
 |![](https://github.com/kdkdhoho.png?size=100)|![](https://github.com/yoondgu.png?size=100)|![](https://github.com/0chil.png?size=100)|![](https://github.com/sh111-coder.png?size=100)|![](https://github.com/donghae-kim.png?size=100)|![](https://github.com/chaewon121.png?size=100)|
 | --- | --- | --- | --- | --- | --- |
-| 도기 | 도이 | 땡칠 | 성하 | 오션 | 채채 |
+| [도기](https://github.com/kdkdhoho) | [도이](https://github.com/yoondgu) | [땡칠](https://github.com/0chil) | [성하](https://github.com/sh111-coder) | [오션](https://github.com/donghae-kim) | [채채](https://github.com/chaewon121) |
