@@ -10,7 +10,7 @@
 
 월 14:00 ~ 15:00 / 금 16:00 ~ 17:00
 
-## :spiral_calendar_pad: **기간**
+## 🗓 **기간**
 
 2월 27일 ~ 레벨1 방학식 전까지
 
@@ -30,7 +30,7 @@
 
 1. 총무 및 예약: 성하
 
-## :woman-woman-girl-boy: 인원
+## 👩‍👩‍👧‍👦 인원
 
 |![](https://github.com/kdkdhoho.png?size=100)|![](https://github.com/yoondgu.png?size=100)|![](https://github.com/0chil.png?size=100)|![](https://github.com/sh111-coder.png?size=100)|![](https://github.com/donghae-kim.png?size=100)|![](https://github.com/chaewon121.png?size=100)|
 | --- | --- | --- | --- | --- | --- |
