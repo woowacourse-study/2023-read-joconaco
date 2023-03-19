@@ -1,6 +1,7 @@
 ---
 import '../styles/theme.css';
 import '../styles/index.css';
+import { GITHUB_REPO } from '../consts';
 ---
 
 <!-- Global Metadata -->
@@ -8,7 +9,7 @@ import '../styles/index.css';
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
 
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href=`${GITHUB_REPO}/favicon.svg` />
 
 <link rel="sitemap" href="/sitemap.xml" />
 
@@ -21,7 +22,7 @@ import '../styles/index.css';
 />
 
 <!-- Scrollable a11y code helper -->
-<script src="/make-scrollable-code-focusable.js" is:inline></script>
+<script src=`${GITHUB_REPO}/make-scrollable-code-focusable.js` is:inline></script>
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script is:inline>
