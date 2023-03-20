@@ -1,0 +1,94 @@
+---
+import ThemeToggleButton from './ThemeToggleButton';
+import { COMMUNITY_INVITE_URL } from '../../consts';
+
+type Props = {
+	editHref: string;
+	viewHref: string;
+};
+
+const { editHref, viewHref } = Astro.props;
+const showMoreSection = Boolean(COMMUNITY_INVITE_URL);
+---
+
+{<h2 class="heading">More</h2>}
+<ul>
+	{
+		editHref && (
+			<li class={`header-link depth-2`}>
+				<a class="edit-on-github" href={editHref} target="_blank">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fas"
+						data-icon="pen"
+						class="svg-inline--fa fa-pen fa-w-16"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512"
+						height="1em"
+						width="1em"
+					>
+						<path
+							fill="currentColor"
+							d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+						/>
+					</svg>
+					<span>페이지 수정</span>
+				</a>
+			</li>
+		)
+	}
+	{
+		editHref && (
+			<li class={`header-link depth-2`}>
+				<a class="view-on-github" href={viewHref} target="_blank">
+					<svg width="1em" height="1em" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+							transform="scale(64)" fill="#1B1F23" />
+					</svg>
+					<span>깃허브에서 보기</span>
+				</a>
+			</li>
+		)
+	}
+	{
+		false && (
+			<li class={`header-link depth-2`}>
+				<a href={COMMUNITY_INVITE_URL} target="_blank">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fas"
+						data-icon="comment-alt"
+						class="svg-inline--fa fa-comment-alt fa-w-16"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 512 512"
+						height="1em"
+						width="1em"
+					>
+						<path
+							fill="currentColor"
+							d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+						/>
+					</svg>
+					<span>Join our community</span>
+				</a>
+			</li>
+		)
+	}
+</ul>
+<div style="margin: 2rem 0; text-align: center;">
+	<ThemeToggleButton client:visible />
+</div>
+
+<style>
+	.edit-on-github {
+		text-decoration: none;
+		font: inherit;
+		color: inherit;
+		font-size: 1rem;
+	}
+</style>
